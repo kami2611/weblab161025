@@ -1,0 +1,76 @@
+/* Custom styles for FashionHub - Minimalist Fashion Website */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom focus states for accessibility */
+*:focus {
+    outline: 2px solid #111827;
+    outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Custom hover effects for product cards */
+.group:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+/* Loading animation for form submissions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f9fafb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #111827;
+}
+
+/* Ensure images don't exceed container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom button hover effects */
+button:hover, .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Print styles */
+@media print {
+    nav, footer {
+        display: none;
+    }
+}

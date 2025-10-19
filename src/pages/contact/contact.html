@@ -1,43 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>about us page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionHub - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../public/index.css">
 </head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="../../../index.html" class="text-2xl font-bold text-gray-900">FashionHub</a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="../../../index.html" class="text-gray-600 hover:text-gray-900 transition">Home</a>
+                    <a href="../about/about.html" class="text-gray-600 hover:text-gray-900 transition">About</a>
+                    <a href="contact.html" class="text-gray-900 font-medium border-b-2 border-gray-900 pb-1">Contact</a>
+                </div>
+                
+                <!-- Auth Links -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="../auth/signin.html" class="text-gray-600 hover:text-gray-900 transition">Sign In</a>
+                    <a href="../auth/signup.html" class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">Sign Up</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../../../index.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Home</a>
+                <a href="../about/about.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">About</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-900 font-medium">Contact</a>
+                <a href="../auth/signin.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Sign In</a>
+                <a href="../auth/signup.html" class="block px-3 py-2 text-gray-900 font-medium">Sign Up</a>
+            </div>
+        </div>
+    </nav>
 
-<body>
-  <nav>
-    <ul style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-      <li>
-        <a href="/">home</a>
-      </li>
-      <li>
-        <a href="../about/about.html">aboutus</a>
-      </li>
-      <li>
-        <a href="../contact/contact.html">contactus</a>
-      </li>
-    </ul>
-  </nav>
-  <header>
-    <h1 style="text-align: center;">hello, this is a contact us page</h1>
-  </header>
-  <section>
-    <form action="" style="display: flex; flex-direction: column; gap: 10px; width: 300px; margin: auto;">
-      <label for="name">enter your name</label>
-      <input type="text" id="name" placeholder="name">
-      <label for="email">enter your email</label>
-      <input type="email" id="email" placeholder="email">
-      <label for="contactinfo">message</label>
-      <textarea name="contactinformation" id="contactinfo">
+    <!-- Page Header -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Get In Touch</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
 
-      </textarea>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Contact Form - Flowbite Component 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+                    
+                    <!-- Input Component - Flowbite Component 2 -->
+                    <div class="mb-6">
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your Name</label>
+                        <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-900 focus:border-gray-900 block w-full p-2.5" placeholder="John Doe" required>
+                    </div>
+                    
+                    <!-- Email Input - Flowbite Component 3 -->
+                    <div class="mb-6">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your Email</label>
+                        <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-900 focus:border-gray-900 block w-full p-2.5" placeholder="name@example.com" required>
+                    </div>
+                    
+                    <!-- Select Component - Flowbite Component 4 -->
+                    <div class="mb-6">
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                        <select id="subject" name="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-900 focus:border-gray-900 block w-full p-2.5" required>
+                            <option value="">Choose a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Customer Support</option>
+                            <option value="order">Order Status</option>
+                            <option value="partnership">Partnership</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Textarea Component - Flowbite Component 5 -->
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your Message</label>
+                        <textarea id="message" name="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-900 focus:border-gray-900" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    
+                    <!-- Checkbox Component - Flowbite Component 6 -->
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-gray-300" required>
+                            </div>
+                            <label for="terms" class="ml-2 text-sm font-medium text-gray-900">I agree to the <a href="#" class="text-gray-900 underline hover:no-underline">terms and conditions</a></label>
+                        </div>
+                    </div>
+                    
+                    <!-- Button Component - Flowbite Component 7 -->
+                    <button type="submit" class="w-full text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="space-y-8">
+                
+                <!-- Card Component - Flowbite Component 8 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
+                            <p class="text-gray-600">+1 (555) 123-4567</p>
+                            <p class="text-sm text-gray-500 mt-1">Mon-Fri from 8am to 6pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card Component -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                            <p class="text-gray-600">support@fashionhub.com</p>
+                            <p class="text-sm text-gray-500 mt-1">We'll respond within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card Component -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Office</h3>
+                            <p class="text-gray-600">123 Fashion Street</p>
+                            <p class="text-gray-600">New York, NY 10001</p>
+                            <p class="text-sm text-gray-500 mt-1">Visit us Mon-Sat 10am-7pm</p>
+                        </div>
+                    </div>
+                </div>
 
-      <button>send message</button>
-    </form>
-  </section>
+                <!-- Alert Component - Flowbite Component 9 -->
+                <div class="flex p-4 text-sm text-gray-800 rounded-lg bg-gray-50 border border-gray-200" role="alert">
+                    <svg class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-medium">Info:</span> For urgent matters, please call us directly during business hours.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">What are your shipping times?</h3>
+                    <p class="text-gray-600">Standard shipping takes 3-5 business days. Express shipping is available for 1-2 day delivery.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">What is your return policy?</h3>
+                    <p class="text-gray-600">We offer a 30-day return policy for all unworn items with original tags attached.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Do you ship internationally?</h3>
+                    <p class="text-gray-600">Yes, we ship to over 30 countries worldwide. Shipping costs vary by location.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">How can I track my order?</h3>
+                    <p class="text-gray-600">You'll receive a tracking number via email once your order ships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FashionHub</h3>
+                    <p class="text-gray-400">Your destination for minimalist fashion and timeless style.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Women</a></li>
+                        <li><a href="#" class="hover:text-white transition">Men</a></li>
+                        <li><a href="#" class="hover:text-white transition">Accessories</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../about/about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white transition">Facebook</a></li>
+                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 FashionHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form validation
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            const terms = document.getElementById('terms').checked;
+            
+            if (!name || !email || !subject || !message) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            if (!terms) {
+                e.preventDefault();
+                alert('Please agree to the terms and conditions.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('Please enter a valid email address.');
+                return;
+            }
+        });
+    </script>
+
 </body>
-
 </html>

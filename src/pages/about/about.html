@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionHub - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../public/index.css">
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="../../../index.html" class="text-2xl font-bold text-gray-900">FashionHub</a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="../../../index.html" class="text-gray-600 hover:text-gray-900 transition">Home</a>
+                    <a href="about.html" class="text-gray-900 font-medium border-b-2 border-gray-900 pb-1">About</a>
+                    <a href="../contact/contact.html" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
+                </div>
+                
+                <!-- Auth Links -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="../auth/signin.html" class="text-gray-600 hover:text-gray-900 transition">Sign In</a>
+                    <a href="../auth/signup.html" class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">Sign Up</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../../../index.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-900 font-medium">About</a>
+                <a href="../contact/contact.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Contact</a>
+                <a href="../auth/signin.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Sign In</a>
+                <a href="../auth/signup.html" class="block px-3 py-2 text-gray-900 font-medium">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About FashionHub</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">We believe in simplicity, quality, and timeless design. Our mission is to provide fashion that lasts.</p>
+        </div>
+    </section>
+
+    <!-- Timeline Component -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Our Journey</h2>
+        <div class="space-y-8">
+            <!-- Timeline Item 1 -->
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-bold">1</div>
+                    <div class="w-0.5 h-full bg-gray-300 mt-2"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">2010 - Founded</h3>
+                    <p class="text-gray-600">Started with a vision to bring minimalist fashion to everyone.</p>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 2 -->
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-bold">2</div>
+                    <div class="w-0.5 h-full bg-gray-300 mt-2"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">2015 - Expansion</h3>
+                    <p class="text-gray-600">Opened 25 stores across the country and launched our online platform.</p>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 3 -->
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-bold">3</div>
+                    <div class="w-0.5 h-full bg-gray-300 mt-2"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">2020 - Sustainability</h3>
+                    <p class="text-gray-600">Committed to eco-friendly materials and sustainable practices.</p>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 4 -->
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-bold">4</div>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">2025 - Global Reach</h3>
+                    <p class="text-gray-600">Serving customers in 30+ countries with 50+ locations worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Component -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">15</div>
+                    <div class="text-gray-600">Years in Business</div>
+                </div>
+                <div class="p-6 border border-gray-200 rounded-lg">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">50+</div>
+                    <div class="text-gray-600">Store Locations</div>
+                </div>
+                <div class="p-6 border border-gray-200 rounded-lg">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">10K+</div>
+                    <div class="text-gray-600">Happy Customers</div>
+                </div>
+                <div class="p-6 border border-gray-200 rounded-lg">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">500+</div>
+                    <div class="text-gray-600">Products</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section Component -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Team Member 1 -->
+            <div class="text-center">
+                <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">Emma Wilson</h3>
+                <p class="text-gray-600 mb-2">Founder & CEO</p>
+                <p class="text-sm text-gray-500">Visionary leader with 20 years of fashion experience</p>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="text-center">
+                <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">James Carter</h3>
+                <p class="text-gray-600 mb-2">Creative Director</p>
+                <p class="text-sm text-gray-500">Award-winning designer passionate about minimalism</p>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="text-center">
+                <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">Sofia Martinez</h3>
+                <p class="text-gray-600 mb-2">Head of Sustainability</p>
+                <p class="text-sm text-gray-500">Committed to eco-friendly fashion solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Component -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">What People Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="text-yellow-400 mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mb-6 italic">"FashionHub has completely transformed my wardrobe. The quality is exceptional and the designs are timeless."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Alexandra Reed</h4>
+                            <p class="text-sm text-gray-600">Fashion Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="text-yellow-400 mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mb-6 italic">"I love their commitment to sustainability. Finally, a fashion brand that cares about the planet!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">David Thompson</h4>
+                            <p class="text-sm text-gray-600">Environmental Activist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values/Accordion Component -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Our Values</h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="accordion-button w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center">
+                    <span class="font-semibold text-gray-900">Quality First</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="accordion-content hidden px-6 py-4 bg-gray-50 text-gray-600">
+                    We use only the finest materials and craftsmanship to ensure every piece lasts for years.
+                </div>
+            </div>
+            
+            <!-- Accordion Item 2 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="accordion-button w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center">
+                    <span class="font-semibold text-gray-900">Sustainability</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="accordion-content hidden px-6 py-4 bg-gray-50 text-gray-600">
+                    We're committed to eco-friendly practices, from sourcing to production to packaging.
+                </div>
+            </div>
+            
+            <!-- Accordion Item 3 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="accordion-button w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center">
+                    <span class="font-semibold text-gray-900">Timeless Design</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="accordion-content hidden px-6 py-4 bg-gray-50 text-gray-600">
+                    Our minimalist approach ensures your wardrobe never goes out of style.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FashionHub</h3>
+                    <p class="text-gray-400">Your destination for minimalist fashion and timeless style.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Women</a></li>
+                        <li><a href="#" class="hover:text-white transition">Men</a></li>
+                        <li><a href="#" class="hover:text-white transition">Accessories</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="../contact/contact.html" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white transition">Facebook</a></li>
+                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 FashionHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Accordion functionality
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('svg');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+
+</body>
+</html>
