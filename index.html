@@ -1,258 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FashionHub - Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="public/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionHub - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="public/index.css">
 </head>
+
 <body class="bg-gray-50">
-    
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold text-gray-900">FashionHub</a>
-                </div>
-                
-                <!-- Navigation Links -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-900 font-medium border-b-2 border-gray-900 pb-1">Home</a>
-                    <a href="src/pages/about/about.html" class="text-gray-600 hover:text-gray-900 transition">About</a>
-                    <a href="src/pages/contact/contact.html" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
-                </div>
-                
-                <!-- Auth Links -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="src/pages/auth/signin.html" class="text-gray-600 hover:text-gray-900 transition">Sign In</a>
-                    <a href="src/pages/auth/signup.html" class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">Sign Up</a>
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="index.html" class="block px-3 py-2 text-gray-900 font-medium">Home</a>
-                <a href="src/pages/about/about.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">About</a>
-                <a href="src/pages/contact/contact.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Contact</a>
-                <a href="src/pages/auth/signin.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Sign In</a>
-                <a href="src/pages/auth/signup.html" class="block px-3 py-2 text-gray-900 font-medium">Sign Up</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="relative bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Minimalist Fashion</h1>
-                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Discover timeless pieces that define your style. Simple, elegant, essential.</p>
-                <div class="flex justify-center gap-4">
-                    <a href="#collection" class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition">Shop Now</a>
-                    <a href="src/pages/about/about.html" class="border border-gray-900 text-gray-900 px-8 py-3 rounded-md hover:bg-gray-50 transition">Learn More</a>
-                </div>
-            </div>
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html" class="text-2xl font-bold text-gray-900">FashionHub</a>
         </div>
-    </section>
 
-    <!-- Feature Cards -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="text-3xl mb-4">🚚</div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Free Shipping</h3>
-                <p class="text-gray-600">On orders over $100</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="text-3xl mb-4">↩️</div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Easy Returns</h3>
-                <p class="text-gray-600">30-day return policy</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="text-3xl mb-4">🌱</div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Sustainable</h3>
-                <p class="text-gray-600">Eco-friendly materials</p>
-            </div>
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-900 font-medium border-b-2 border-gray-900 pb-1">Home</a>
+          <a href="src/pages/about/about.html" class="text-gray-600 hover:text-gray-900 transition">About</a>
+          <a href="src/pages/contact/contact.html" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
         </div>
-    </section>
 
-    <!-- Collection Section -->
-    <section id="collection" class="bg-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">New Collection</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Product Card 1 -->
-                <div class="group">
-                    <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-                        <span class="text-gray-400 text-4xl">👕</span>
-                    </div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Classic White Tee</h3>
-                    <p class="text-gray-600">$29.99</p>
-                </div>
-                <!-- Product Card 2 -->
-                <div class="group">
-                    <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-                        <span class="text-gray-400 text-4xl">👖</span>
-                    </div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Slim Fit Jeans</h3>
-                    <p class="text-gray-600">$79.99</p>
-                </div>
-                <!-- Product Card 3 -->
-                <div class="group">
-                    <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-                        <span class="text-gray-400 text-4xl">👗</span>
-                    </div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Summer Dress</h3>
-                    <p class="text-gray-600">$89.99</p>
-                </div>
-                <!-- Product Card 4 -->
-                <div class="group">
-                    <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-                        <span class="text-gray-400 text-4xl">🧥</span>
-                    </div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Denim Jacket</h3>
-                    <p class="text-gray-600">$119.99</p>
-                </div>
-            </div>
+        <!-- Auth Links -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="src/pages/auth/signin.html" class="text-gray-600 hover:text-gray-900 transition">Sign
+            In</a>
+          <a href="src/pages/auth/signup.html" class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">Sign Up</a>
         </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="bg-gray-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl font-bold mb-2">10K+</div>
-                    <div class="text-gray-400">Happy Customers</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">500+</div>
-                    <div class="text-gray-400">Products</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">50+</div>
-                    <div class="text-gray-400">Stores</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">15</div>
-                    <div class="text-gray-400">Years Experience</div>
-                </div>
-            </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Testimonial Section -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">What Our Customers Say</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
-                    <div>
-                        <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
-                        <div class="text-yellow-400">★★★★★</div>
-                    </div>
-                </div>
-                <p class="text-gray-600">"Amazing quality and perfect fit. The minimalist designs are exactly what I was looking for!"</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
-                    <div>
-                        <h4 class="font-semibold text-gray-900">Michael Chen</h4>
-                        <div class="text-yellow-400">★★★★★</div>
-                    </div>
-                </div>
-                <p class="text-gray-600">"Great customer service and fast shipping. Will definitely order again!"</p>
-            </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 text-gray-900 font-medium">Home</a>
+        <a href="src/pages/about/about.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">About</a>
+        <a href="src/pages/contact/contact.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Contact</a>
+        <a href="src/pages/auth/signin.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Sign
+          In</a>
+        <a href="src/pages/auth/signup.html" class="block px-3 py-2 text-gray-900 font-medium">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Minimalist Fashion</h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Discover timeless pieces that define your style.
+          Simple, elegant, essential.</p>
+        <div class="flex justify-center gap-4">
+          <a href="#collection" class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition">Shop Now</a>
+          <a href="src/pages/about/about.html" class="border border-gray-900 text-gray-900 px-8 py-3 rounded-md hover:bg-gray-50 transition">Learn
+            More</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Newsletter Section -->
-    <section class="bg-white py-16">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
-            <p class="text-gray-600 mb-8">Subscribe to our newsletter for exclusive offers and new arrivals.</p>
-            <form class="flex gap-4 max-w-md mx-auto">
-                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
-                <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition">Subscribe</button>
-            </form>
+  <!-- Feature Cards -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div class="text-3xl mb-4">🚚</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Free Shipping</h3>
+        <p class="text-gray-600">On orders over $100</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div class="text-3xl mb-4">↩️</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Easy Returns</h3>
+        <p class="text-gray-600">30-day return policy</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div class="text-3xl mb-4">🌱</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Sustainable</h3>
+        <p class="text-gray-600">Eco-friendly materials</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section id="collection" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">New Collection</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Product Card 1 -->
+        <div class="group">
+          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
+            <span class="text-gray-400 text-4xl">👕</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-1">Classic White Tee</h3>
+          <p class="text-gray-600">$29.99</p>
         </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Upgrade Your Wardrobe?</h2>
-            <p class="text-gray-600 mb-8">Join thousands of fashion enthusiasts who trust FashionHub</p>
-            <a href="src/pages/auth/signup.html" class="inline-block bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition">Get Started</a>
+        <!-- Product Card 2 -->
+        <div class="group">
+          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
+            <span class="text-gray-400 text-4xl">👖</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-1">Slim Fit Jeans</h3>
+          <p class="text-gray-600">$79.99</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">FashionHub</h3>
-                    <p class="text-gray-400">Your destination for minimalist fashion and timeless style.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Shop</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition">Women</a></li>
-                        <li><a href="#" class="hover:text-white transition">Men</a></li>
-                        <li><a href="#" class="hover:text-white transition">Accessories</a></li>
-                        <li><a href="#" class="hover:text-white transition">Sale</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="src/pages/about/about.html" class="hover:text-white transition">About</a></li>
-                        <li><a href="src/pages/contact/contact.html" class="hover:text-white transition">Contact</a></li>
-                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition">Press</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Follow Us</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition">Instagram</a></li>
-                        <li><a href="#" class="hover:text-white transition">Facebook</a></li>
-                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
-                        <li><a href="#" class="hover:text-white transition">Pinterest</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 FashionHub. All rights reserved.</p>
-            </div>
+        <!-- Product Card 3 -->
+        <div class="group">
+          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
+            <span class="text-gray-400 text-4xl">👗</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-1">Summer Dress</h3>
+          <p class="text-gray-600">$89.99</p>
         </div>
-    </footer>
+        <!-- Product Card 4 -->
+        <div class="group">
+          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
+            <span class="text-gray-400 text-4xl">🧥</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-1">Denim Jacket</h3>
+          <p class="text-gray-600">$119.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+  <!-- Stats Section -->
+  <section class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold mb-2">10K+</div>
+          <div class="text-gray-400">Happy Customers</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">500+</div>
+          <div class="text-gray-400">Products</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">50+</div>
+          <div class="text-gray-400">Stores</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">15</div>
+          <div class="text-gray-400">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">What Our Customers Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+          <div>
+            <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+            <div class="text-yellow-400">★★★★★</div>
+          </div>
+        </div>
+        <p class="text-gray-600">"Amazing quality and perfect fit. The minimalist designs are exactly what I was
+          looking for!"</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+          <div>
+            <h4 class="font-semibold text-gray-900">Michael Chen</h4>
+            <div class="text-yellow-400">★★★★★</div>
+          </div>
+        </div>
+        <p class="text-gray-600">"Great customer service and fast shipping. Will definitely order again!"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="bg-white py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+      <p class="text-gray-600 mb-8">Subscribe to our newsletter for exclusive offers and new arrivals.</p>
+      <form class="flex gap-4 max-w-md mx-auto">
+        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
+        <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Upgrade Your Wardrobe?</h2>
+      <p class="text-gray-600 mb-8">Join thousands of fashion enthusiasts who trust FashionHub</p>
+      <a href="src/pages/auth/signup.html" class="inline-block bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition">Get
+        Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">FashionHub</h3>
+          <p class="text-gray-400">Your destination for minimalist fashion and timeless style.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Shop</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Women</a></li>
+            <li><a href="#" class="hover:text-white transition">Men</a></li>
+            <li><a href="#" class="hover:text-white transition">Accessories</a></li>
+            <li><a href="#" class="hover:text-white transition">Sale</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="src/pages/about/about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="src/pages/contact/contact.html" class="hover:text-white transition">Contact</a>
+            </li>
+            <li><a href="#" class="hover:text-white transition">Careers</a></li>
+            <li><a href="#" class="hover:text-white transition">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Follow Us</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+            <li><a href="#" class="hover:text-white transition">Facebook</a></li>
+            <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+            <li><a href="#" class="hover:text-white transition">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 FashionHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
+
 </html>
