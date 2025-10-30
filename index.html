@@ -99,39 +99,116 @@
   <section id="collection" class="bg-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">New Collection</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Product Card 1 -->
-        <div class="group">
-          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-            <span class="text-gray-400 text-4xl">👕</span>
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-1">Classic White Tee</h3>
-          <p class="text-gray-600">$29.99</p>
+
+      <!-- Search and Filter Section -->
+      <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-8">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Search & Filter</h3>
+
+        <!-- Search Bar -->
+        <div class="mb-4">
+          <input type="text" id="search-input" placeholder="Search outfits..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent">
         </div>
-        <!-- Product Card 2 -->
-        <div class="group">
-          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-            <span class="text-gray-400 text-4xl">👖</span>
+
+        <!-- Filter Options -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <!-- Price Range Filter -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Price Range</label>
+            <select id="price-filter" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
+              <option value="all">All Prices</option>
+              <option value="under-10">Under $10</option>
+              <option value="10-50">$10 - $50</option>
+              <option value="50-100">$50 - $100</option>
+              <option value="over-100">Over $100</option>
+            </select>
           </div>
-          <h3 class="font-semibold text-gray-900 mb-1">Slim Fit Jeans</h3>
-          <p class="text-gray-600">$79.99</p>
-        </div>
-        <!-- Product Card 3 -->
-        <div class="group">
-          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-            <span class="text-gray-400 text-4xl">👗</span>
+
+          <!-- Category Filter -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Category</label>
+            <select id="category-filter" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
+              <option value="all">All Categories</option>
+              <option value="tops">Tops</option>
+              <option value="bottoms">Bottoms</option>
+              <option value="outerwear">Outerwear</option>
+              <option value="accessories">Accessories</option>
+              <option value="footwear">Footwear</option>
+            </select>
           </div>
-          <h3 class="font-semibold text-gray-900 mb-1">Summer Dress</h3>
-          <p class="text-gray-600">$89.99</p>
-        </div>
-        <!-- Product Card 4 -->
-        <div class="group">
-          <div class="bg-gray-100 aspect-square rounded-lg mb-4 flex items-center justify-center">
-            <span class="text-gray-400 text-4xl">🧥</span>
+
+          <!-- Sort By Filter -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Sort By</label>
+            <select id="sort-filter" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+            </select>
           </div>
-          <h3 class="font-semibold text-gray-900 mb-1">Denim Jacket</h3>
-          <p class="text-gray-600">$119.99</p>
+
+          <!-- Season Filter -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Season</label>
+            <select id="season-filter" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
+              <option value="all">All Seasons</option>
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="fall">Fall</option>
+              <option value="winter">Winter</option>
+            </select>
+          </div>
+
+          <!-- Material Filter -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Material</label>
+            <select id="material-filter" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
+              <option value="all">All Materials</option>
+              <option value="cotton">Cotton</option>
+              <option value="denim">Denim</option>
+              <option value="leather">Leather</option>
+              <option value="wool">Wool</option>
+              <option value="synthetic">Synthetic</option>
+            </select>
+          </div>
         </div>
+
+        <!-- Clear Filters Button -->
+        <div class="mt-4">
+          <button id="clear-filters" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition text-sm">
+            Clear All Filters
+          </button>
+          <span id="results-count" class="ml-4 text-gray-600 text-sm"></span>
+        </div>
+      </div>
+
+      <button id="add-outfit-btn" class="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition mb-4">
+        Add Outfit
+      </button>
+
+      <!-- ...existing form code... -->
+      <div id="outfit-form" class="hidden bg-gray-50 p-6 rounded-lg border border-gray-200 mb-8">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Add New Outfit</h3>
+        <form id="add-outfit-form" class="space-y-4">
+          <div>
+            <label for="outfit-name" class="block text-sm font-medium text-gray-700 mb-2">Outfit Name</label>
+            <input type="text" id="outfit-name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent" placeholder="Enter outfit name">
+          </div>
+          <div>
+            <label for="outfit-price" class="block text-sm font-medium text-gray-700 mb-2">Price</label>
+            <input type="number" id="outfit-price" name="price" required min="0" step="0.01" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent" placeholder="Enter price">
+          </div>
+          <div class="flex gap-4">
+            <button type="submit" class="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition">
+              Submit
+            </button>
+            <button type="button" id="cancel-form-btn" class="bg-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-400 transition">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="product_grid_main" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       </div>
     </div>
   </section>
@@ -262,7 +339,30 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
-
+  <script src="index.js"></script>
+  <div id="edit-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg p-6 w-full max-w-md mx-4">
+      <h3 class="text-xl font-semibold text-gray-900 mb-4">Edit Outfit</h3>
+      <form id="edit-outfit-form" class="space-y-4">
+        <div>
+          <label for="edit-outfit-name" class="block text-sm font-medium text-gray-700 mb-2">Outfit Name</label>
+          <input type="text" id="edit-outfit-name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent" placeholder="Enter outfit name">
+        </div>
+        <div>
+          <label for="edit-outfit-price" class="block text-sm font-medium text-gray-700 mb-2">Price</label>
+          <input type="number" id="edit-outfit-price" name="price" required min="0" step="0.01" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent" placeholder="Enter price">
+        </div>
+        <div class="flex gap-4 pt-4">
+          <button type="submit" class="flex-1 bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-800 transition">
+            Update
+          </button>
+          <button type="button" id="cancel-edit-btn" class="flex-1 bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400 transition">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
